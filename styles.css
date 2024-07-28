@@ -1,89 +1,81 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #3179ff;
-    color: white;
-    height: 8%;
+.header {
+  background-color: #5552ff;
+  color: white;
+  padding: 10px 20px;
 }
 
-.logo img {
-    width: 100%;
-    max-width: 75px;
-    height: auto;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.menu {
-    display: flex;
-    list-style: none;
+.nav-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
 }
 
-.menu li {
-    margin: 0 15px;
+.nav-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-.menu a {
-    color: #000000;
-    text-decoration: none;
-    transition: color 0.3s;
+.nav-item {
+  margin: 0 15px;
 }
 
-.menu a:hover {
-    color: #ff6347;
+.nav-link {
+  color: white;
+  text-decoration: none;
 }
 
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
-.menu-toggle .bar {
-    height: 3px;
-    width: 25px;
-    background-color: pink;
-    margin: 4px 0;
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 3px 0;
+  transition: all 0.3s ease;
 }
 
 /* Responsive Styles */
 @media (max-width: 1080px) {
-    header {
-        height: 5%;
-        position: relative;
-    }
-
-    .menu {
-        display: none; /* Hide menu by default */
-        flex-direction: column;
-        width: 100%;
-        background-color: aqua; /* Match the header background */
-        position: absolute; /* Position it below the header */
-        top: 100%; /* Align it under the header */
-        left: 0;
-    }
-
-    .menu li {
-        padding: 10px 0;
-        text-align: center; /* Center align for mobile */
-    }
-
-    .menu.active {
-        display: flex; /* Show menu when active */
-    }
-
-    .menu-toggle {
-        display: flex; /* Show hamburger icon */
-    }
+  .nav-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 50px; /* Adjust based on header height */
+  right: -200px; /* Position the menu off-screen initially */
+  background-color: #5552ff;
+  flex-direction: column;
+  width: 200px;
+  padding: 10px 0;
+  transition: right 0.3s ease; /* Add transition for animation */
 }
+
+  .nav-menu.active {
+      display: flex;
+      right: 0;
+  }
+
+  .hamburger {
+      display: flex;
+  }
+
+}
+
