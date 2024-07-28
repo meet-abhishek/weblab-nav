@@ -4,30 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Hamburger Drop Down</title>
+    <title>Hamburger Right Slider</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="#">
-                <img src="assets/image.svg" alt="image">
-            </a>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">MyLogo</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
             </ul>
-            <div class="menu-toggle" id="mobile-menu">
+            <div class="hamburger" onclick="toggleMenu()">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
         </nav>
     </header>
-
     <script src="script.js"></script>
 </body>
 </html>
