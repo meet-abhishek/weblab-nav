@@ -60,13 +60,18 @@ nav {
 /* Responsive Styles */
 @media (max-width: 1080px) {
     .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #333;
-        width: 100%;
+        list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 50px; /* Adjust based on header height */
+  right: -200px; /* Position the menu off-screen initially */
+  background-color: #5552ff;
+  flex-direction: column;
+  width: 200px;
+  padding: 10px 0;
+  transition: right 0.3s ease; /* Add transition for animation */
     }
 
     .menu.active {
