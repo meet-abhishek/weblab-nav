@@ -1,4 +1,4 @@
-document.getElementById('mobile-menu').addEventListener('click', function() {
-    const menu = document.querySelector('.menu');
-    menu.classList.toggle('active');
+document.getElementById('hamburger').addEventListener('click', function() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('active'); // Toggle the 'active' class
 });
