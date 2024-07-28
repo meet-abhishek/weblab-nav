@@ -1,2 +1,4 @@
-// script.js
-// You can add JavaScript code here if needed
+document.getElementById('mobile-menu').addEventListener('click', function() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+});
