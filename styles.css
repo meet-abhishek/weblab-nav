@@ -64,17 +64,30 @@ nav {
     background-color: #000000; /* Darker background on hover */
     color: #ffffff; /* Change text color on hover */
 }
-.burger {
+.menu-icon {
     display: none;
+    flex-direction: column;
     cursor: pointer;
     margin-right: 3rem;
+    height: auto;
+    width: auto;
 }
-.burger div {
-    width: 2rem;
+.menu-icon div {
+    width: 2.2rem;
     height: 0.25rem;
     background-color: white;
-    margin: 0.5rem;
+    margin: 0.25rem 0rem;
     transition: all 0.3s ease;
+}
+
+.menu-icon.toggle .bar-1 {
+    transform: rotate(45deg) translate(0.5rem, 0.5rem);
+}
+.menu-icon.toggle .bar-2 {
+    opacity: 0;
+}
+.menu-icon.toggle .bar-3 {
+    transform: rotate(-45deg) translate(0.5rem, -0.5rem);
 }
 
 /* Responsive Web */
@@ -105,9 +118,7 @@ nav {
         height: 20vh;
         margin-right: 0; 
     }
-    .burger {
-        display: block;
-        cursor: pointer;
-        margin-right: 3rem;
+    .menu-icon {
+        display: flex;
     }
 }
