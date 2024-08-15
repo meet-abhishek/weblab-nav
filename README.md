@@ -1,3 +1,3 @@
-# responsive-web-lab
-A sandbox for experimenting with responsive web design techniques.
+# weblab-nav
+A sandbox for experimenting with responsive web design and navigation techniques.
 ### https://meet-abhishek.github.io/weblab-nav
